@@ -1,11 +1,8 @@
 {
   "name": "react-native-keep-awake",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Keep the screen from going to sleep. iOS and Android.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "react-native",
     "ios",
