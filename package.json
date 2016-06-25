@@ -1,6 +1,6 @@
 {
   "name": "react-native-keep-awake",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Keep the screen from going to sleep. iOS and Android.",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,11 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "awake",
+    "screen",
+    "lock",
+    "sleep"
   ],
   "author": "Kyle Corbitt",
   "license": "MIT"
