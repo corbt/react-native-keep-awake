@@ -3,8 +3,6 @@
 
 package com.corbt.keepawake;
 
-import android.app.Activity;
-
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;
 import com.facebook.react.bridge.NativeModule;
@@ -13,18 +11,12 @@ import com.facebook.react.uimanager.ViewManager;
 
 import java.util.*;
 
-public class KeepAwakePackage implements ReactPackage {
-
-    private Activity mActivity = null;
-
-    public KeepAwakePackage(Activity activity) {
-        mActivity = activity;
-    }
+public class KCKeepAwakePackage implements ReactPackage {
 
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
-        modules.add(new KeepAwake(reactContext, mActivity));
+        modules.add(new KCKeepAwake(reactContext));
         return modules;
     }
 
@@ -35,7 +27,7 @@ public class KeepAwakePackage implements ReactPackage {
 
     @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
-        return Collections.emptyList();
+        return new ArrayList<>();
     }
 
 }
