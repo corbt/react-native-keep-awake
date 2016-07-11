@@ -10,38 +10,35 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 
-public class KeepAwake extends ReactContextBaseJavaModule {
+public class KCKeepAwake extends ReactContextBaseJavaModule {
 
-    private Activity mActivity = null;
-    private ReactApplicationContext mContext = null;
-
-    public KeepAwake(ReactApplicationContext reactContext, Activity mActivity) {
+    public KCKeepAwake(ReactApplicationContext reactContext) {
         super(reactContext);
-        this.mActivity = mActivity;
-        this.mContext = reactContext;
     }
 
     @Override
     public String getName() {
-        return "KeepScreenOn";
+        return "KCKeepAwake";
     }
 
     @ReactMethod
     public void activate() {
-        this.mActivity.runOnUiThread(new Runnable() {
+        final Activity activity = getCurrentActivity();
+        activity.runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                KeepAwake.this.mActivity.getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+                activity.getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
             }
         });
     }
 
     @ReactMethod
     public void deactivate() {
-        this.mActivity.runOnUiThread(new Runnable() {
+        final Activity activity = getCurrentActivity();
+        activity.runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                KeepAwake.this.mActivity.getWindow().clearFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+                activity.getWindow().clearFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
             }
         });
     }

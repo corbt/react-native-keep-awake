@@ -20,12 +20,8 @@ After RNPM finishes, you will have to make a small change to your `MainActivity.
 
 ```java
 // MainActivity.java, inside the getPackages() method:
-
-    // old
-    new KeepAwakePackage(),
-
-    // new
-    new KeepAwakePackage(this),
+    ...
+    new KCKeepAwakePackage()
 ```
 
 ### Manual install
