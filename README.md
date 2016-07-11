@@ -19,7 +19,7 @@ rnpm link react-native-keep-awake
 After RNPM finishes, you will have to make a small change to your `MainActivity.java` for android support:
 
 ```java
-// MainActivity.java, inside the getPackages() method:
+// MainApplication.java, inside the getPackages() method:
     ...
     new KCKeepAwakePackage()
 ```
@@ -36,9 +36,9 @@ After RNPM finishes, you will have to make a small change to your `MainActivity.
 
 #### Android
 
-1. Open up `android/app/src/main/java/[...]/MainActivity.java
-  - Add `import com.corbt.keepawake.KeepAwakePackage;` to the imports at the top of the file
-  - Add `new KeepAwakePackage(this)` to the list returned by the `getPackages()` method
+1. Open up `android/app/src/main/java/[...]/MainApplication.java (React Native 0.29+)
+  - Add `import com.corbt.keepawake.KCKeepAwakePackage;` to the imports at the top of the file
+  - Add `new KCKeepAwakePackage()` to the list returned by the `getPackages()` method
 
 3. Append the following lines to `android/settings.gradle`:
 
