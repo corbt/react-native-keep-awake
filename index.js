@@ -15,7 +15,7 @@ export default class KeepAwake extends Component {
   }
 
   static deactivate() {
-      if (!KeepAwake.isActive) {
+      if (KeepAwake.isActive) {
           NativeModules.KCKeepAwake.deactivate();
           KeepAwake.isActive = false;      
       }
