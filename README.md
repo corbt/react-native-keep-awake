@@ -16,7 +16,7 @@ The plugin can be installed using [rnpm](https://github.com/rnpm/rnpm).
 rnpm link react-native-keep-awake
 ```
 
-After RNPM finishes, you will have to make a small change to your `MainActivity.java` for android support:
+After RNPM finishes, you will have to make a small change to your `MainApplication.java` for android support:
 
 ```java
 // MainApplication.java, inside the getPackages() method:
