@@ -24,22 +24,28 @@ public class KCKeepAwake extends ReactContextBaseJavaModule {
     @ReactMethod
     public void activate() {
         final Activity activity = getCurrentActivity();
-        activity.runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                activity.getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-            }
-        });
+
+        if (activity != null) {
+            activity.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    activity.getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+                }
+            });
+        }
     }
 
     @ReactMethod
     public void deactivate() {
         final Activity activity = getCurrentActivity();
-        activity.runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                activity.getWindow().clearFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-            }
-        });
+
+        if (activity != null) {
+            activity.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    activity.getWindow().clearFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+                }
+            });
+        }
     }
 }
