@@ -10,18 +10,10 @@ npm install --save react-native-keep-awake
 
 ### RNPM
 
-The plugin can be installed using [rnpm](https://github.com/rnpm/rnpm).
+The plugin can be installed using [react-native link](https://facebook.github.io/react-native/docs/linking-libraries-ios.html) on both iOS and Android. Once installed with npm, just run:
 
 ```
-rnpm link react-native-keep-awake
-```
-
-After RNPM finishes, you will have to make a small change to your `MainApplication.java` for android support:
-
-```java
-// MainApplication.java, inside the getPackages() method:
-    ...
-    new KCKeepAwakePackage()
+react-native link
 ```
 
 ### Manual install
