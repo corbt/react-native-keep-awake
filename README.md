@@ -38,16 +38,16 @@ react-native link
 
 3. Append the following lines to `android/settings.gradle`:
 
-	```groovy
-	include ':react-native-keep-awake'
+```groovy
+include ':react-native-keep-awake'
 	project(':react-native-keep-awake').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-keep-awake/android')
-	```
+```
 
 4. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
 
-	```groovy
-  compile project(':react-native-keep-awake')
-  ```
+```groovy
+compile project(':react-native-keep-awake')
+```
 
 ## Usage
 
