@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		13BE3DEE1AC21097009241FE /* KCKeepAwake.m in Sources */ = {isa = PBXBuildFile; fileRef = 13BE3DED1AC21097009241FE /* KCKeepAwake.m */; };
-		325F5AB81E67640F00E6CDE4 /* KCKeepAwake.m in Sources */ = {isa = PBXBuildFile; fileRef = 13BE3DED1AC21097009241FE /* KCKeepAwake.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -153,7 +152,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				325F5AB81E67640F00E6CDE4 /* KCKeepAwake.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
