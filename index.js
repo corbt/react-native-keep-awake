@@ -21,6 +21,6 @@ export default class KeepAwake extends Component<void, void> {
   }
 
   render() {
-    return this.props.children || null;
+    return null;
   }
 }
