@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import { NativeModules } from 'react-native';
 
-export default class KeepAwake extends Component<void, void> {
+export default class KeepAwake extends Component<{}> {
   static activate() {
     NativeModules.KCKeepAwake.activate();
   }
