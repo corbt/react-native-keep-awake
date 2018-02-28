@@ -17,7 +17,7 @@ npm install --save react-native-keep-awake
 The plugin can be installed using [react-native link](https://facebook.github.io/react-native/docs/linking-libraries-ios.html) on both iOS and Android. Once installed with npm, just run:
 
 ```
-react-native link
+react-native link react-native-keep-awake
 ```
 
 ### Manual install
