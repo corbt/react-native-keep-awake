@@ -13,7 +13,6 @@ import java.util.*;
 
 public class KCKeepAwakePackage implements ReactPackage {
 
-    @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
         modules.add(new KCKeepAwake(reactContext));
@@ -25,7 +24,6 @@ public class KCKeepAwakePackage implements ReactPackage {
         return Collections.emptyList();
     }
 
-    @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
         return new ArrayList<>();
     }
