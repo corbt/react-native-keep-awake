@@ -1,9 +1,5 @@
 This React Native package allows you to prevent the screen from going to sleep while your app is active. It's useful for things like navigation or video playback, where the user expects the app to remain visible over long periods without touch interaction.
 
-## Compatible Versions
-
-**Note:** Due to a breaking change in React Native [0.40](https://github.com/facebook/react-native/releases/tag/v0.40.0), versions 2.0+ of this library is only compatible with RN >=0.40. For older versions of React Native, you'll need to install version 1.07.
-
 ## Installation
 
 As the first step, install this module:
