@@ -5,7 +5,7 @@ import { NativeModules } from 'react-native';
 
 let mounted = 0;
 
-export default class KeepAwake extends Component<void, void> {
+export default class KeepAwake extends Component<{}> {
   static activate() {
     NativeModules.KCKeepAwake.activate();
   }
