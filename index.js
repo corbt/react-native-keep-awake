@@ -12,7 +12,7 @@ export default class KeepAwake extends Component<{}> {
     NativeModules.KCKeepAwake.deactivate();
   }
 
-  componentWillMount() {
+  componentDidMount() {
     KeepAwake.activate();
   }
 
