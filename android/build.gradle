@@ -1,16 +1,11 @@
 buildscript {
     repositories {
         google()
-        maven {
-            url 'https://maven.google.com/'
-            name 'Google'
-        }
         jcenter()
-
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.android.tools.build:gradle:3.1.4'
     }
 }
 
@@ -41,5 +36,5 @@ android {
 
 dependencies {
     //noinspection GradleDynamicVersion
-    compile "com.facebook.react:react-native:${_reactNativeVersion}"
+    implementation "com.facebook.react:react-native:${_reactNativeVersion}"
 }
