@@ -4,8 +4,18 @@ This React Native package allows you to prevent the screen from going to sleep w
 
 As the first step, install this module:
 
+### React Native 0.57+
+
 ```
 npm install --save react-native-keep-awake
+```
+
+### React Native 0.56 and below
+
+v4 of this module targets gradle 3 syntax, which is not available by default for React Native v0.56 and below. If you are targeting an older version of React Native, stick to v3 of this module:
+
+```
+npm install --save react-native-keep-awake@3
 ```
 
 ### RNPM
