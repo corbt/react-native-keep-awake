@@ -6,7 +6,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/corbt/react-native-keep-awake.git"
+    "url": "https://github.com/corbt/react-native-keep-awake.git"
   },
   "bugs": {
     "url": "https://github.com/corbt/react-native-keep-awake/issues"
