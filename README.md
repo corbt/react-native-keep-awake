@@ -68,7 +68,7 @@ import { View, Text } from 'react-native';
 import KeepAwake from 'react-native-keep-awake';
 
 // Method 1
-const MyComponent extends Component {
+class MyComponent extends Component {
   render() {
     if (this.props.screenShouldBeAwake) {
       return (
