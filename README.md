@@ -1,3 +1,9 @@
+# DEPRECATION NOTICE
+
+This package has been deprecated in favor of https://www.npmjs.com/package/expo-keep-awake. That package does everything this one does and is maintained by the excellent Expo team.
+
+# END DEPRECATION NOTICE
+
 This React Native package allows you to prevent the screen from going to sleep while your app is active. It's useful for things like navigation or video playback, where the user expects the app to remain visible over long periods without touch interaction.
 
 ## Installation
