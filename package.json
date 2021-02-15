@@ -3,6 +3,7 @@
   "version": "4.0.0",
   "description": "Keep the screen from going to sleep. iOS and Android.",
   "main": "index.js",
+  "types": "index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/corbt/react-native-keep-awake.git"
