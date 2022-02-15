@@ -1,6 +1,8 @@
 # DEPRECATION NOTICE
 
-This package has been deprecated in favor of https://www.npmjs.com/package/expo-keep-awake. That package does everything this one does and is maintained by the excellent Expo team.
+This package has been deprecated. Please try either:
+* https://www.npmjs.com/package/expo-keep-awake This package matches functionality and is maintained by the excellent Expo team.
+* https://www.npmjs.com/package/@sayem314/react-native-keep-awake. This package is an up to date fork and does not require Expo.
 
 # END DEPRECATION NOTICE
 
